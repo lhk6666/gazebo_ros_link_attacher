@@ -14,6 +14,9 @@ elseif(COMPILER_SUPPORTS_CXX0X)
 else()
   message(FATAL_ERROR "Compiler ${CMAKE_CXX_COMPILER} has no C++11 support.")
 endif()
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 #####################################
 
 # Load catkin and all dependencies required for this package
